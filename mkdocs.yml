@@ -1,0 +1,49 @@
+site_name: Hassan Jabri Data Analysis Portfolio
+site_url: https://github.com/hassan-jabri/hassan-jabri.github.io
+site_description: 
+site_author: Hassan Jabri
+
+nav:
+  - Home: index.md
+  - Projects:
+      - Project 1: projects/Flu EDA.md
+  - About Me: about.md
+
+
+theme:
+  name: material
+  palette:
+    primary: 'blue'
+    accent: 'light blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: images/logo.png
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - mdx_truly_sane_lists:
+      strip_html_comments: false
+  - attr_list
+
+
+
+
